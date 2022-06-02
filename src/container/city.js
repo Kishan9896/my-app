@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
-class city extends Component {
+class City extends Component {
     constructor(props) {
         super(props);
-        this.city = {
+        this.state = {
             cityName: 'Surat'
         }
     }
     changeCity = () => {
-        this.changeCity({
+        this.setState({
             cityName: 'Baroda'
         });
     }
@@ -17,11 +17,11 @@ class city extends Component {
     render() {
         return (
             <div>
-                <p>{this.city.cityName}</p>
+                <p>{this.state.cityName}</p>
                 <button onClick={() => this.changeCity()}>Change City</button>   
             </div>
         );
     }
 }
 
-export default city;
+export default City;
