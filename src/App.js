@@ -4,6 +4,7 @@ import City from './container/City';
 import Cityfun from './container/Cityfun';
 import Famousplace from './container/Famousplace';
 import Country from './container/Country';
+import Time from './container/Time/Time';
 
 function App() {
   
@@ -13,7 +14,8 @@ function App() {
       {/* <City /> */}
       {/* <Cityfun/> */}
       {/* <Famousplace/> */}
-      <Country/>
+      {/* <Country/> */}
+      <Time/>
     </div>
   );
 }
