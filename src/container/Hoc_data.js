@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Home from './Home';
 import Loading from './Loading';
 
-const homedata = Loading(Home)
+const Homedata = Loading(Home)
 
 function Hoc_data(props) {
     const [loading, setLoading] = useState(false);
@@ -17,12 +17,12 @@ function Hoc_data(props) {
 
     useEffect(() => {
         setLoading(true);
-        setTimeout(() => {setLoading(false), setdata(dataOrg)}, 2000)
+        setTimeout(() => {setLoading(false); setdata(dataOrg)}, 2000)
     }, [])
 
     return (
         <div>
-            <homedata isLoading={loading} useData={data} />
+            <Homedata isLoading={loading} useData={data} />
         </div>
     );
 }

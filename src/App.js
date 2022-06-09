@@ -7,6 +7,8 @@ import Country from './container/Country';
 import Time from './container/Time/Time';
 import TimeFun from './container/Time/TimeFun';
 import Loading from './container/Loading';
+import Hoc_data from './container/Hoc_data';
+import Home from './container/Home';
 
 function App() {
   
@@ -14,7 +16,8 @@ function App() {
   return (
     <div>
         {/* <Loading /> */}
-        
+        <Hoc_data />
+        {/* <Home /> */}
     </div>
   );
 }
